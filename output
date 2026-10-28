@@ -1,0 +1,140 @@
+
+======================================================================
+STUDENT PERFORMANCE ANALYTICS SYSTEM
+======================================================================
+Records loaded : 20
+Columns        : Student_ID, Name, Department, Maths, Physics, Chemistry, English, Computer_Science, Attendance
+
+======================================================================
+1. DATASET PREVIEW (first 5 records)
+======================================================================
+Student_ID         Name       Department  Maths  Physics  Chemistry  English  Computer_Science  Attendance
+      S001 Aarav Sharma Computer Science     92       88         85       78                95          96
+      S002  Priya Verma Computer Science     78       72         80       85                88          91
+      S003  Rohan Meena       Mechanical     65       58         62       70                60          82
+      S004 Ananya Gupta      Electronics     88       91         84       79                90          94
+      S005 Vikram Singh       Mechanical     45       38         50       55                42          68
+
+======================================================================
+2. DATASET INFO
+======================================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 9 columns):
+ #   Column            Non-Null Count  Dtype
+---  ------            --------------  -----
+ 0   Student_ID        20 non-null     str  
+ 1   Name              20 non-null     str  
+ 2   Department        20 non-null     str  
+ 3   Maths             20 non-null     int64
+ 4   Physics           20 non-null     int64
+ 5   Chemistry         20 non-null     int64
+ 6   English           20 non-null     int64
+ 7   Computer_Science  20 non-null     int64
+ 8   Attendance        20 non-null     int64
+dtypes: int64(6), str(3)
+memory usage: 1.5 KB
+
+======================================================================
+3. FULL RESULT SHEET
+======================================================================
+Student_ID             Name       Department  Total  Average Grade Result  Attendance Attendance_Status
+      S001     Aarav Sharma Computer Science    438     87.6     A   Pass          96                OK
+      S002      Priya Verma Computer Science    403     80.6     A   Pass          91                OK
+      S003      Rohan Meena       Mechanical    315     63.0     C   Pass          82                OK
+      S004     Ananya Gupta      Electronics    432     86.4     A   Pass          94                OK
+      S005     Vikram Singh       Mechanical    230     46.0     E   Fail          68               Low
+      S006      Sneha Joshi Computer Science    463     92.6    A+   Pass          98                OK
+      S007      Karan Yadav      Electronics    284     56.8     D   Pass          74               Low
+      S008    Pooja Rathore            Civil    365     73.0     B   Pass          88                OK
+      S009  Rahul Choudhary            Civil    207     41.4     E   Fail          62               Low
+      S010       Neha Saini      Electronics    421     84.2     A   Pass          92                OK
+      S011       Amit Kumar       Mechanical    300     60.0     C   Pass          79                OK
+      S012       Kavya Nair Computer Science    449     89.8     A   Pass          95                OK
+      S013       Deepak Jat            Civil    253     50.6     D   Pass          71               Low
+      S014     Isha Agarwal      Electronics    437     87.4     A   Pass          97                OK
+      S015    Manish Bairwa       Mechanical    350     70.0     B   Pass          85                OK
+      S016      Riya Kapoor Computer Science    373     74.6     B   Pass          89                OK
+      S017  Suresh Prajapat            Civil    263     52.6     D   Pass          76                OK
+      S018     Tanvi Mathur      Electronics    398     79.6     B   Pass          93                OK
+      S019     Harsh Pareek       Mechanical    195     39.0     F   Fail          58               Low
+      S020 Meera Khandelwal            Civil    413     82.6     A   Pass          90                OK
+
+======================================================================
+4. CLASS PERFORMANCE
+======================================================================
+Highest average : Sneha Joshi (92.6)
+Lowest average  : Harsh Pareek (39.0)
+Class average   : 69.89
+Class median    : 73.8
+Std deviation   : 16.94
+
+======================================================================
+5. PASS / FAIL STATISTICS
+======================================================================
+Total students  : 20
+Passed          : 17
+Failed          : 3
+Pass percentage : 85.0%
+
+Failed students:
+Student_ID            Name  Average
+      S005    Vikram Singh     46.0
+      S009 Rahul Choudhary     41.4
+      S019    Harsh Pareek     39.0
+
+======================================================================
+6. GRADE DISTRIBUTION
+======================================================================
+Grade A  : ####### (7)
+Grade A+ : # (1)
+Grade B  : #### (4)
+Grade C  : ## (2)
+Grade D  : ### (3)
+Grade E  : ## (2)
+Grade F  : # (1)
+
+======================================================================
+7. SUBJECT-WISE ANALYSIS
+======================================================================
+         Subject  Average  Highest  Lowest  Failed_Students
+           Maths    68.60       95      30                2
+         Physics    67.85       93      35                2
+       Chemistry    68.55       90      40                0
+         English    73.40       92      48                0
+Computer_Science    71.05       97      38                1
+
+Best subject  : English (avg 73.4)
+Weakest subject: Physics (avg 67.85)
+
+======================================================================
+8. DEPARTMENT-WISE ANALYSIS
+======================================================================
+                  Students  Avg_Marks  Avg_Attendance  Passed
+Department                                                   
+Computer Science         5      85.04            93.8       5
+Electronics              5      78.88            90.0       5
+Civil                    5      60.04            77.4       4
+Mechanical               5      55.60            74.4       3
+
+======================================================================
+9. TOP 5 PERFORMING STUDENTS
+======================================================================
+Student_ID         Name       Department  Total  Average Grade
+      S006  Sneha Joshi Computer Science    463     92.6    A+
+      S012   Kavya Nair Computer Science    449     89.8     A
+      S001 Aarav Sharma Computer Science    438     87.6     A
+      S014 Isha Agarwal      Electronics    437     87.4     A
+      S004 Ananya Gupta      Electronics    432     86.4     A
+
+======================================================================
+10. LOW ATTENDANCE STUDENTS (below 75%)
+======================================================================
+Student_ID            Name  Attendance
+      S005    Vikram Singh          68
+      S007     Karan Yadav          74
+      S009 Rahul Choudhary          62
+      S013      Deepak Jat          71
+      S019    Harsh Pareek          58
+
+Processed results saved to results.csv
